@@ -1,0 +1,89 @@
+/* ESTILO GERAL  LEMBRE QUE TODOS OS .html ESTÃO DIRECIONADOS PARA ESSE AQUIVO !!!!!!!!!!!!!!!!!!!!!*/
+body {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+    min-height: 100vh; 
+    
+    background-color: aqua;
+
+    /* centraliza o container */
+    display: flex;
+    justify-content: center; /* centraliza horizontalmwente */
+    align-items: center; /* centraliza verticalmente */
+}
+
+/* inicio da tela inicial */
+/* CONTAINER */
+.container {
+    padding: 0; 
+    width: 100%; 
+    max-width: 300px; /* limite de largura */
+    
+    background-color: blue; 
+    
+    /* espaço entre os conteudos na div container */
+    display: flex;
+    flex-direction: column; /* alinha os elementos um embaixo do outro*/
+    align-items: center; 
+    gap: 65px; /* espaçamento entre a img e os botoes */
+}
+
+/* IMG */
+/* centraliza logo */
+#logoimg {
+    display: block; /* to na duvida entre block e flex !!!!!!!!!!!!!!!!!!!!!!!!! */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tamanho da imagem */
+#logoimg img {
+    
+    width: 370px; 
+    height: auto;
+}
+
+
+/* ESTILO DOS BOTÕES */
+.btniniciais {
+    display: flex; 
+    flex-direction: column; /* verticaliza os botoes */
+    gap: 15px; /* Espaço entre os botões (espaçamento vertical) */
+    width: 100%;
+    align-items: center;
+}
+
+.btniniciais button {
+    
+    padding: 10px 15px;
+    background-color: black; 
+    color: white; 
+    text-transform: uppercase; /* letra em capslock */
+    letter-spacing: 1px; /* espaçamento interno entre letras */
+    
+    border: 1px solid white; 
+    border-radius: 0; 
+
+    cursor: pointer;
+    font-size: 12px; 
+    font-weight: bold;
+    text-decoration: none; 
+
+    width: 100%; 
+}
+
+/* efeito hover botão */
+.btniniciais button:hover {
+    background-color: white; 
+    color: black;
+    border: 1px solid black; 
+
+}
+
+/* final da tela inicial */
+
+/*ADICIONAR MAIS TARDE @media*/
