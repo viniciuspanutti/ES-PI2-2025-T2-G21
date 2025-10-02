@@ -9,23 +9,29 @@
 
     </head>
     <body>
-        <div class="formulariocad">
-            <h1>Login</h1>
-            
-            <form id="formbasico" action="#" method="post">
+        <div class="container">
+            <div class="formulariocad">
+                <h1>Login</h1>
                 
-                <label for="email">E-mail:</label>
-                <input id="email" name="email" type="email" required placeholder="seu@exemplo.com">
-                <br><br>
-                <label for="password">Senha:</label>
-                <input id="password" name="password" type="password" required minlength="6" placeholder="mínimo 6 caracteres">       
-                <br><br>
-                <p>Esqueci minha senha</p>
-                <button type="submit">Entrar</button>
-                <!-- <button type="reset">Limpar</button> -->
-            </form>
-        </div>
+                <form id="formbasico" action="#" method="post">
+                    
+                    <label for="email">E-mail:</label><br>
+                    <input id="email" name="email" type="email" required placeholder="seu@exemplo.com">
+                    <br><br>
+                    <label for="password">Senha:</label><br>
+                    <input id="password" name="password" type="password" required minlength="6" placeholder="mínimo 6 caracteres">       
+                    <br><br>
+                    <p>Esqueci minha senha</p>
+                    <div class="btniniciais">
+                        <button type="submit">Entrar</button>
+                    </div>
+                    
+                    <!-- <button type="reset">Limpar</button> -->
+                </form>
+            </div>
 
+        </div>
+        
         <script src="/js/script.js"></script>
     </body>
 </html>
