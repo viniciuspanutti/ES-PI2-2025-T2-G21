@@ -15,25 +15,28 @@
                 
                 <form id="formbasico" action="#" method="post">
                     
-                    <label for="name">Nome completo:</label><br>
+                    <label for="name">Nome completo</label><br>
                     <input id="name" name="name" type="text" required minlength="5" placeholder="ex: Luã Muriana">
                     <br><br>
 
-                    <label for="email">E-mail:</label><br>
+                    <label for="email">E-mail</label><br>
                     <input id="email" name="email" type="email" required placeholder="seu@exemplo.com">
                     <br><br>
 
-                    <label for="phone">Telefone celular:</label><br>
-                    <input id="phone" name="phone" type="tel" required placeholder="(19) 69690-2424">
+                    <label for="phone">Telefone celular</label><br>
+                    <input id="phone" name="phone" type="tel" required minlength="11" placeholder="(19) 69690-2424">
                     <br><br>
 
-                    <label for="password">Senha:</label><br>
-                    <input id="password" name="password" type="password" required minlength="6" placeholder="mínimo 6 caracteres">       
+                    <label for="password">Senha</label><br>
+                    <input id="password" name="password" type="password" required minlength="8" placeholder="mínimo 8 caracteres">       
                     <br><br>
                     
+                    <div class="btniniciais">
+                        <button type="submit">Concluir cadastro</button>
+                        <button type="reset">Limpar</button>
+                    </div>
                     <!-- botoes de ação -->
-                    <button type="submit">Concluir cadastro</button>
-                    <button type="reset">Limpar</button>
+                    
                 </form>
             </div>
         </div>

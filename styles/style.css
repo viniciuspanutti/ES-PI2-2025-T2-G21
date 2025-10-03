@@ -7,7 +7,7 @@ body {
     width: 100%;
     min-height: 100vh; 
     
-    background-color: aqua;
+    background-color: white;
 
     /* centraliza o container */
     display: flex;
@@ -22,7 +22,7 @@ body {
     width: 100%; 
     max-width: 300px; /* limite de largura */
     
-    background-color: blue; 
+    background-color: white; 
     
     /* espaço entre os conteudos na div container */
     display: flex;
@@ -60,12 +60,12 @@ body {
 .btniniciais button {
     
     padding: 10px 15px;
-    background-color: black; 
-    color: white; 
+    background-color: white; 
+    color: black; 
     text-transform: uppercase; /* letra em capslock */
     letter-spacing: 1px; /* espaçamento interno entre letras */
     
-    border: 1px solid white; 
+    border: 1px solid black; /* talvez vou adicionar 'double' depois */
     border-radius: 0; 
 
     cursor: pointer;
@@ -78,8 +78,8 @@ body {
 
 /* efeito hover botão */
 .btniniciais button:hover {
-    background-color: white; 
-    color: black;
+    background-color: black; 
+    color: white;
     border: 1px solid black; 
 
 }
