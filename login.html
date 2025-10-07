@@ -4,16 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="images/img-icon.png">
-        <link rel="stylesheet" href="styles/cadastro.css">
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/cadastro.css">
         <title>Projeto NotaDez</title>
-
     </head>
     <body>
         <div class="container"> 
-            <!-- CORREÇÃO: O seletor no CSS agora usa #loginform -->
             <form id="loginform" action="#" method="post">
-                <p class="titulo">Insira os dados para acessar a conta</p>
+                <p class="titulo">Insira os seus dados para acessar a conta</p>
 
                 <div class="inputform">
                     <label for="email">E-mail</label>
@@ -22,7 +20,7 @@
 
                 <div class="inputform">
                     <label for="password">Senha</label>
-                    <input id="password" name="password" type="password" required minlength="6" placeholder="mínimo 6 caracteres"> 
+                    <input id="password" name="password" type="password" required minlength="8" placeholder="Mín 8 caracteres"> 
                 </div>
                 
                 <a href="#" class="es">Esqueci minha senha</a>
@@ -31,11 +29,8 @@
                 <div class="btniniciais">
                     <button class="bntentrar" type="submit">Entrar</button>
                 </div>
-                
                 <!-- O fechamento da linha (::after) é feito automaticamente pelo CSS no final do formulário -->
             </form>
-            
-            <!-- CORREÇÃO: Removi os <br> desnecessários e estilizei o botão de Voltar -->
             <a href="index.html" class="btn-voltar-link"><button>Voltar para a página inicial</button></a>
         </div>
         <script src="/js/script.js"></script>
