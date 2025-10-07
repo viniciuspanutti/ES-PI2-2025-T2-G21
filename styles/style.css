@@ -55,11 +55,13 @@ body {
     gap: 15px; /* Espaço entre os botões (espaçamento vertical) */
     width: 100%;
     align-items: center;
+
 }
 
 .btniniciais button {
-    
+    width: 300px; 
     padding: 10px 15px;
+    
     background-color: white; 
     color: black; 
     text-transform: uppercase; /* letra em capslock */
@@ -73,7 +75,7 @@ body {
     font-weight: bold;
     text-decoration: none; 
 
-    width: 100%; 
+    
 }
 
 /* efeito hover botão */

@@ -85,24 +85,19 @@
     text-decoration: underline;
 }
 
-/* BOTÃO ENTRAR */
-.btniniciais {
-    width: 100%; /* Garantir que a div que contém o botão ocupe 100% */
-    display: flex;
-    justify-content: center;
-}
-
 .bntentrar {
     width: 100%;
     padding: 10px;
     
     background-color: white; 
     color: black; 
+
     text-transform: uppercase; 
     letter-spacing: 1px; 
-    font-size: 16px; 
-    font-weight: bold;
+
     cursor: pointer; 
+    font-size: 12px; 
+    font-weight: bold;
 
     border: 1px solid black; 
     border-radius: 0; 
@@ -110,7 +105,9 @@
 }
 
 .bntentrar:hover {
-    background-color: white; 
+    background-color: black;
+    color: white;
+    border: 1px solid black;  
 }
 
 /* LINHA HORIZONTAL INFERIOR */
@@ -142,5 +139,5 @@
 }
 
 .btn-voltar-link button:hover {
-        text-decoration: underline;
+    text-decoration: underline;
 }
