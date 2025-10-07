@@ -1,0 +1,159 @@
+.container {
+            padding: 0; 
+            width: 100%; 
+            max-width: 400px; /* Largura da caixa de login */
+            
+            background-color: transparent; 
+            border: none; 
+            
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            gap: 0; 
+        }
+
+        /* --- */
+
+        /* ESTILOS DO FORMULÁRIO DE LOGIN (Usamos o ID #loginform) */
+        #loginform {
+            width: 100%;
+            
+            /* Borda externa fina (1px) */
+            border: 1px solid black; 
+            border-radius: 0;
+            
+            /* Padding interno para o espaçamento do conteúdo */
+            padding: 30px 40px; 
+            
+            /* Organização em coluna */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .titulo {
+            font-size: 14px;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 30px; 
+            width: 100%;
+        }
+
+        /* --- */
+
+        /* ESTILOS DOS CAMPOS (INPUTS) */
+
+        .inputform {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .inputform label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-weight: normal; 
+            text-transform: uppercase;
+        }
+
+        .inputform input {
+            /* IMPORTANTE: Usa o 'border-bottom' para o efeito de linha */
+            width: 100%;
+            padding: 8px 0; 
+            border: none;
+            border-bottom: 1px solid black; 
+            
+            font-size: 16px;
+            outline: none; 
+        }
+        
+        /* Remove o padding padrão do placeholder */
+        .inputform input::placeholder {
+            padding-left: 5px; 
+            color: #ccc;
+        }
+
+        /* --- */
+
+        /* LINK ESQUECI MINHA SENHA */
+
+        .es {
+            font-size: 10px;
+            text-decoration: none; 
+            color: rgba(167, 167, 167, 0.603);
+             /* Alinha o link à direita */
+            margin-top: 10px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .es:hover {
+            text-decoration: underline;
+        }
+
+        /* --- */
+
+        /* BOTÃO ENTRAR */
+        .btniniciais {
+            width: 100%; /* Garantir que a div que contém o botão ocupe 100% */
+            display: flex;
+            justify-content: center;
+        }
+
+        .bntentrar {
+            width: 100%;
+            padding: 10px;
+            
+            background-color: white; 
+            color: black; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            font-size: 16px; 
+            font-weight: bold;
+            cursor: pointer; 
+
+            border: 1px solid black; 
+            border-radius: 0; 
+
+        }
+
+        .bntentrar:hover {
+            background-color: #f5f5f5; 
+        }
+
+        /* --- */
+
+        /* LINHA HORIZONTAL INFERIOR (FECHA O QUADRO) */
+        /* CORREÇÃO: Usa o ID #loginform::after para desenhar a linha */
+        #loginform::after {
+            content: '';
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid black;
+            margin-top: 20px;
+            /* Se for necessário fechar a borda, isso é o suficiente. 
+               Se precisar de um elemento fora do form, use o .container::after */
+        }
+        
+        /* Estilização para o botão "Voltar" extra (fora do form) */
+        .btn-voltar-link {
+            text-decoration: none;
+            width: 100%;
+            margin-top: 40px; /* Afastamento do formulário */
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-voltar-link button {
+            all: unset; /* Remove todos os estilos padrão de botão */
+            cursor: pointer;
+            font-size: 14px;
+            color: rgba(167, 167, 167, 0.603);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+        }
+
+        .btn-voltar-link button:hover {
+             text-decoration: underline;
+        }

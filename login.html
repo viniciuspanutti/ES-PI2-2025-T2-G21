@@ -4,37 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="images/img-icon.png">
+        <link rel="stylesheet" href="styles/cadastro.css">
         <link rel="stylesheet" href="styles/style.css">
         <title>Projeto NotaDez</title>
 
     </head>
     <body>
-        <div class="container">
-            <div class="formulariocad">
-                <h1>Login</h1>
-                
-                <form id="formbasico" action="#" method="post">
-                    
-                    <label for="email">E-mail:</label><br>
-                    <input id="email" name="email" type="email" required placeholder="seu@exemplo.com">
-                    <br><br>
-                    <label for="password">Senha:</label><br>
-                    <input id="password" name="password" type="password" required minlength="6" placeholder="mínimo 6 caracteres">       
-                    <br><br>
-                    <p>Esqueci minha senha</p>
-                    <div class="btniniciais">
-                        <button type="submit">Entrar</button>
-                    </div>
-                    
-                    <!-- <button type="reset">Limpar</button> -->
-                </form>
-            </div>
-            <a href="index.html" class="btniniciais"><button>Voltar para a página inicial</button></a>
-            <!--verificar se embaixo está ok, OU SE VAMOS MUDAR-->
-        </div>
+        <div class="container"> 
+            <!-- CORREÇÃO: O seletor no CSS agora usa #loginform -->
+            <form id="loginform" action="#" method="post">
+                <p class="titulo">Insira os dados para acessar a conta</p>
 
+                <div class="inputform">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" required placeholder="seu@exemplo.com">
+                </div>
+
+                <div class="inputform">
+                    <label for="password">Senha</label>
+                    <input id="password" name="password" type="password" required minlength="6" placeholder="mínimo 6 caracteres"> 
+                </div>
+                
+                <a href="#" class="es">Esqueci minha senha</a>
+                
+                <!-- Botão Entrar -->
+                <div class="btniniciais">
+                    <button class="bntentrar" type="submit">Entrar</button>
+                </div>
+                
+                <!-- O fechamento da linha (::after) é feito automaticamente pelo CSS no final do formulário -->
+            </form>
+            
+            <!-- CORREÇÃO: Removi os <br> desnecessários e estilizei o botão de Voltar -->
+            <a href="index.html" class="btn-voltar-link"><button>Voltar para a página inicial</button></a>
         </div>
-        
         <script src="/js/script.js"></script>
     </body>
 </html>
