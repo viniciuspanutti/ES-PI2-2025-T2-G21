@@ -1,0 +1,26 @@
+{
+  "name": "es-pi2-2025-t2-g21",
+  "version": "1.0.0",
+  "description": "Desenvolvimento do projeto NotaDez do complemento curricular Projeto Integrador 2 - 2º semestre de Eng. de Software.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciuspanutti/ES-PI2-2025-T2-G21.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciuspanutti/ES-PI2-2025-T2-G21/issues"
+  },
+  "homepage": "https://github.com/viniciuspanutti/ES-PI2-2025-T2-G21#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
+  }
+}
