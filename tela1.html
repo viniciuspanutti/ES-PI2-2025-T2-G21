@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/img-icon.png">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/cad.css">
+
+        <title>Projeto NotaDez</title>
+
+    </head>
+    <body>
+        <div class="container">
+            <form id="loginform">
+                <h2 class="titulo">Preencha os campos para prosseguir</h2>
+                <div class="inputform">
+                    <label for="instituicao">Instituição</label>
+                    <input type="text" id="instituicao" required>
+                </div>
+
+                <div class="inputform">
+                    <label for="curso">Curso que leciona</label>
+                    <input type="text" id="curso" required>
+                </div>    
+
+                <div class="form-section">
+                    <h3 class="form-section-header">Cadastrar Disciplina</h3>
+                    
+                    <div class="inputform">
+                        <label for="nome-disciplina">Nome</label>
+                        <input type="text" id="nome-disciplina" required>
+                    </div>
+                    
+                    <div class="discipline-row">
+                        <div class="inputform">
+                            <label for="sigla">Código da turma</label>
+                            <input type="text" id="sigla" required>
+                        </div>
+                        
+                        <div class="inputform">
+                            <label for="periodo">Período do Curso</label>
+                            <select class="btniniciais" id="periodo" required>
+                                <option value="">Selecione</option>
+                                <option value="1">1º Semestre</option>
+                                <option value="2">2º Semestre</option>
+                                <option value="3">3º Semestre</option>
+                                <option value="4">4º Semestre</option>
+                                <option value="5">5º Semestre</option>
+                                <option value="6">6º Semestre</option>
+                                <option value="7">7º Semestre</option>
+                                <option value="8">8º Semestre</option>
+                                <option value="9">9º Semestre</option>
+                                <option value="10">10º Semestre</option>
+                                <option value="11">11º Semestre</option>
+                                <option value="12">12º Semestre</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btniniciais">
+                        <button type="button" class="btn-adicionar">Adicionar Disciplina</button>
+                    </div>
+                    
+                </div>               
+                <div class="form-section">
+                    <h3 class="form-section-header">Turmas Associadas à Disciplina</h3>
+                    <div class="inputform">
+                        <label for="nome-turma">Nova Turma</label>
+                        <input type="text" id="nome-turma" placeholder="Turma 104 - Matutino">
+                    </div>
+                    <div class="btniniciais">
+                        <button type="button" class="btn-adicionar">+ Adicionar Turma</button>
+                    </div>
+
+                    <ul>
+                        <li>Turma 103 - Matutino (Segunda - 9:55h)</li>
+                        <li>Turma 104  - Matutino (Quarta - 8:00h)</li>
+                    </ul>
+                </div>
+                <div class="btniniciais">
+                    <button type="submit" class="bntcontinuar">Continuar</button>
+                </div>
+                
+            </form>
+        </div>
+        <script src="/js/script.js"></script>
+    </body>
+</html>
